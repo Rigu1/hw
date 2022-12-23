@@ -1,0 +1,41 @@
+@import "./default.less";
+@import "./miaxin/mixin.less";
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px;
+    border-radius: 10px;
+    
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    img{
+      border-radius: 10px;
+    }
+
+    h4{
+      .text-hide(3);
+
+      margin: 5px;
+    }
+    .content-summery{
+      margin: 10px;
+
+      p{
+        .text-hide(3);
+
+        width: 100%
+      }
+    }
+
+    .content-info{
+      color: @color-default;
+      margin-left: 5px;
+    }
+  }
+}
