@@ -1,0 +1,14 @@
+@color-default:#bbbbbb;
+
+.text-hide(@line){ //인자에 넣은 수 만큼의 줄을 넘어가는 text를 숨기고 숨긴 부분은 ...로 출력
+  display: -webkit-box;
+  -webkit-line-clamp: @line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+} 
+
+.center{//flex기반 중앙 정렬
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
